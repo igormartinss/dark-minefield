@@ -1,0 +1,84 @@
+body {
+    background-color: #22262B;
+    color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    margin: 0 auto;
+    position: relative;
+    width: 940px;
+}
+
+.navigation {
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+.navigation li {
+    margin-left: 90px;
+    display: inline;
+}
+
+.navigation a {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #C0C0C0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.logo-header img{
+    margin-top: 32px;
+    width: 120px;
+}
+
+.new-game {
+    margin: 46px auto;
+    width: 940px;
+}
+
+.new-game button {
+    align-content: left;
+    background-color: #9F0000;
+    border: none;
+    border-radius: 12px;
+    color: #FAFAFA;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    width: 260px;
+
+}
+
+.register-button button {
+    background-color: #9F0000;
+}
+
+.container {
+    border-radius: 12px;
+    background-color: #2D3036;
+    margin: 0 auto 100px;
+    position: relative;
+    text-align: center;
+    width: 940px;
+    z-index: 1;
+}
+
+.ranking-table table {
+    margin: 0 auto;
+}
+
+.ranking-table tr, td, th {
+    padding: 10px 40px;
+}
+
+.ranking-table th {
+    border-bottom: 1px solid #FAFAFA;
+}
