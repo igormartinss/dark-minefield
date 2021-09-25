@@ -80,3 +80,7 @@ body {
     left: 60px;
     position: absolute;
 }
+
+a:visited, a:hover, a:active {
+  color: inherit;
+}
