@@ -61,6 +61,6 @@ body {
     border-bottom: 1px solid #FAFAFA;
 }
 
-a:visited, a:hover, a:active {
+a, a:visited, a:hover, a:active {
   color: inherit;
 }
