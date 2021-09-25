@@ -18,26 +18,29 @@
             <div class="login-logo">
                 <img src="../assets/logo.png" alt="logo dark Minefield">
             </div>
-            <div class="login-inputs">
-                <div class="input-label">
-                    <label for="username">usuário</label>
+            <form action="../ranking/ranking.html">
+                <div class="login-inputs">
+                    <div class="input-label">
+                        <label for="username">usuário</label>
+                    </div>
+                    <div class="text-input">
+                        <input type="text" name="username" id="username">
+                    </div>
+                    <div class="input-label">
+                        <label for="password">senha</label>
+                    </div>
+                    <div class="text-input">
+                        <input type="password" name="password" id="password">
+                    </div>
                 </div>
-                <div class="text-input">
-                    <input type="text" name="username" id="username">
+                <div class="login-buttons">
+                    <button class="login-button">Entrar</button>
+                    <div class="register">
+                        <p>Novo por aqui? <a href="../register/register.html" class="register-button">Cadastre-se</span>
+                        </p>
+                    </div>
                 </div>
-                <div class="input-label">
-                    <label for="password">senha</label>
-                </div>
-                <div class="text-input">
-                    <input type="password" name="password" id="password">
-                </div>
-            </div>
-            <div class="login-buttons">
-                <button class="login-button">Entrar</button>
-                <div class="register">
-                    <p>Novo por aqui? <span class="register-button">Cadastre-se</span></p>
-                </div>
-            </div>
+            </form>
         </div>
     </main>
 </body>
