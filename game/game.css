@@ -1,0 +1,82 @@
+body {
+    background-color: #22262B;
+    color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    margin: 0 auto;
+    position: relative;
+    width: 940px;
+}
+
+.navigation {
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+.navigation li {
+    margin-left: 90px;
+    display: inline;
+}
+
+.navigation a {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #C0C0C0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.logo-header img{
+    margin-top: 32px;
+    width: 120px;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    width: 940px;
+}
+
+.game-info {
+    display: flex;
+}
+
+.game-info-column {
+    margin-left: 30px;
+    width: 400px;
+}
+
+.game-row {
+    display: inline-flex;
+}
+
+.square {
+    margin: 5px;
+    text-align: center;
+    background-color: #2D3036;
+    height: 140px;
+    width: 140px;
+}
+
+.square-red {
+    position: relative;
+    background-color: #643838;
+    font-size: 50px;
+    height: 140px;
+    margin: 5px;
+    text-align: center;   
+    width: 140px;
+}
+
+.square-red p {
+    left: 60px;
+    position: absolute;
+}

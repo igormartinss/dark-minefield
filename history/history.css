@@ -1,0 +1,62 @@
+body {
+    background-color: #22262B;
+    color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    margin: 0 auto;
+    position: relative;
+    width: 940px;
+}
+
+.navigation {
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+.navigation li {
+    margin-left: 90px;
+    display: inline;
+}
+
+.navigation a {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #C0C0C0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.logo-header img{
+    margin-top: 32px;
+    width: 120px;
+}
+
+.container {
+    border-radius: 12px;
+    background-color: #2D3036;
+    margin: 0 auto 100px;
+    position: relative;
+    text-align: center;
+    width: 940px;
+    z-index: 1;
+}
+
+.history-table table {
+    margin: 0 auto;
+}
+
+.history-table tr, td, th {
+    padding: 10px 40px;
+}
+
+.history-table th {
+    border-bottom: 1px solid #FAFAFA;
+}
