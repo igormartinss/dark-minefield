@@ -84,3 +84,312 @@ body {
 a, a:visited, a:hover, a:active {
   color: inherit;
 }
+#statusJogo{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 6px 5px;
+    background: #2D3036;
+    border: 5px solid black;
+    border-radius: 5px;  
+}
+#statusJogo > * {
+    margin: 0px 5px;
+}
+#labelQtdBandeiras, #labelTempo{
+    font-size: 32pt;
+    line-height: 36px;
+    font-family: "Segoe UI";
+    font-weight: bold;
+}
+#bombas{
+    width: 100%;
+    box-sizing: border-box;
+}
+#bombaIcon {
+    position: absolute;
+    padding-right: 16px;
+    padding-bottom: 15px;
+    padding-top: 17px;
+    padding-left: 21px;
+    font-size: 14pt;
+    font-family: mineFont;
+    border-right: 3px solid black;
+}
+#qtdBombas {
+    width: 188px;
+    padding-left: 80px;
+}
+.game-img{
+    width: 36px;
+    height: 36px;
+}
+#telaJogo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+#fundoMensagem{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 12px 10px;
+    border-radius: 5px;
+    border: 5px solid #000;
+    background: #2D3036;
+}
+.mensagem {
+    height: 100px;
+    width: 230px;
+}
+.mensagem > div > button {
+    height: 50px;
+}
+.mensagemGrande {
+    height: auto;
+    width: 315px;
+}
+.mensagemGrande > div > button {
+    height: 63px;
+    font-size: 16pt;
+}
+.mensagemGrande > #mensagemResultado {
+    font-size: 18.8pt;
+    margin-bottom: 10px;
+}
+#fundoResultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 85px;
+}
+#confirmacao{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: mineFont;
+}
+#btnVoltar {
+    display: none;
+}
+#confirmacao > button {
+    width: 49%;
+}
+#telaConfiguracao {
+    display: none;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 285px;
+    height: 300px;
+    padding: 20px;
+    border: 5px solid #000;
+    border-radius: 5px;
+    background: #2D3036;
+}
+#fundoParaEscurecer {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity 0.6s;
+}
+.fundoAtivo{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+#areaCampo{
+    position: relative;
+    display: none;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+    width: fit-content;
+    height: auto;
+    border-radius: 5px;
+    border: 5px solid #000;
+    background: rgb(29, 124, 103);
+}
+.campoEscurecido {
+    transition: 0;
+    filter: brightness(37%);
+}
+.campoAberto {
+    background: rgb(177, 187, 185);
+}
+.campoAbertoEscuro {
+    background: rgb(149, 157, 155) !important;
+}
+.campoFechado {
+    background: #2D3036;
+}
+.campoFechadoEscuro {
+    background: #2D3036 !important;
+}
+.ativo {
+    display: flex !important;
+}
+.inativo {
+    display: none !important;
+}
+.bandeira {
+    content: url("../assets/imgs/redflag.png");
+}
+.bomba {
+    background: rgb(177, 59, 49);
+}
+.tremer {
+    animation: shake 0.4s;
+    transition: all 3s;
+}
+#divisor {
+    padding: 0px 10px;
+    font-family: mineFont;
+    font-weight: bold;
+    font-size: 14pt;
+    line-height: 58px;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    cursor:pointer;
+    display:block;
+    width:17px;
+    height: 26px;
+    color: #333;
+    text-align:center;
+    position:relative;
+}    
+input[type=number]:hover::-webkit-inner-spin-button { 
+    background: url('../assets/imgs/arrows.png') no-repeat 50% 50%;  
+    position: relative;
+    right: 4px;
+}
+input:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px #2D3036;
+}
+input {
+    width: 100%;
+    padding: 13px;
+    color: #000;
+    background: #2D3036;
+    border: 3px solid black;
+    border-radius: 3px;
+    font-family: mineFont;
+    font-weight: bold;
+    font-size: 14pt;
+}
+::selection {
+    background: #2D3036;
+}
+#proporcao{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20pt;
+}
+.proporcao > input {
+    width: 35%;
+}
+input[type="number"]::-webkit-inner-spin-button {
+    cursor: pointer;
+}
+button {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background: #2D3036;
+    border: 3px solid black;
+    border-radius: 3px;
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: mineFont;
+    cursor: pointer;
+}
+button:focus {
+    outline-style: none;
+}
+.campo {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    font-size: 20pt;
+    font-family: mineFont;
+    text-align: center;
+    user-select: none;
+}
+#mensagemResultado {
+    display: flex;
+    width: 100%;
+    margin-bottom: 3px;
+    font-size: 13.8pt;
+    font-weight: bold;
+    font-family: mineFont;
+}
+#fundoResultado > button {
+    width: 100%;
+    height: 45px;
+    margin: 0;
+    font-size: 14pt;
+}
+#confirmacao {
+    display: none;
+}
+.shakeAnimation {
+    animation: "shake 0.4s";
+}
+@font-face {
+    font-family: "mineFont";
+    src: url("../assets/fonts/mine-sweeper.ttf");
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
